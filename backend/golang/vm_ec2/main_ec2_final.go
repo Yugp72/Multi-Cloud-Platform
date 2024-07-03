@@ -23,6 +23,7 @@ type InstanceRequest struct {
 	SubnetID         string   `json:"subnetID"`
 	Region           string   `json:"region"`
 	Name             string   `json:"name"`
+	AccountID        int      `json:"accountID"`
 }
 
 // InstanceResponse represents the JSON response structure for EC2 instance operations
@@ -181,8 +182,9 @@ func TerminateInstanceHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 var upgrader = websocket.Upgrader{
-	ReadBufferSize:  1024,
-	WriteBufferSize: 1024,
+	CheckOrigin: func(r *http.Request) bool {
+		return true // Allow all origins
+	},
 }
 
 func handleTerminal(w http.ResponseWriter, r *http.Request) {
@@ -194,33 +196,40 @@ func handleTerminal(w http.ResponseWriter, r *http.Request) {
 	defer conn.Close()
 
 	// Load the private key associated with the EC2 instance
-	keyFile := "FirstTryApi.pem"
+	keyFile := "AWSLinux.pem"
 	keyBytes, err := ioutil.ReadFile(keyFile)
 	if err != nil {
 		log.Println("Read key file:", err)
 		return
 	}
 
+	// fmt.Println(keyBytes)
 	signer, err := ssh.ParsePrivateKey(keyBytes)
 	if err != nil {
 		log.Println("Parse private key:", err)
 		return
 	}
+	// fmt.Println(signer.PublicKey())
 
 	// Establish SSH connection to EC2 instance
+	fmt.Println([]ssh.AuthMethod{
+		ssh.PublicKeys(signer),
+	})
 	config := &ssh.ClientConfig{
-		User: "AWSLinux", // Specify the SSH username for your EC2 instance
+		User: "yuyu@localhost", // Specify the SSH username for your EC2 instance
 		Auth: []ssh.AuthMethod{
 			ssh.PublicKeys(signer),
 		},
 		HostKeyCallback: ssh.InsecureIgnoreHostKey(), // Insecure; use proper host key validation in production
 	}
+	fmt.Print(config)
 
-	client, err := ssh.Dial("tcp", "13.126.233.119:22", config)
+	client, err := ssh.Dial("tcp", "0.0.0.0:22", config)
 	if err != nil {
 		log.Println("SSH Dial:", err)
 		return
 	}
+	fmt.Print(client)
 	defer client.Close()
 
 	session, err := client.NewSession()
