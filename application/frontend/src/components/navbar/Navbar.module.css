@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    /* width: 75rem; */
+    height: 4.5rem;
+    padding: 0.625rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.625rem;
+    background: linear-gradient(0deg, rgba(0, 81, 162, 0.10) 0%, rgba(0, 81, 162, 0.26) 80%, rgba(0, 81, 162, 0.26) 80%);
+}
+
+.menu{
+    display: flex;
+    width: 25.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    flex-shrink: 0;
+}
+
+.profileDiv{
+    display: flex;
+    width: 12.875rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.0625rem;
+    flex-shrink: 0;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profilePhoto{
+    display: flex;
+    /* padding: 0rem 1.8125rem 1.875rem 0rem; */
+    align-items: center;
+    border-radius: 0.875rem;
+    height: 2.625rem;
+    width: 2.625rem;
+}
+

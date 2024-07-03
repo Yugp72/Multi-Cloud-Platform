@@ -1,0 +1,68 @@
+.container {
+  padding: 2.3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  position: relative;
+}
+
+.forgotPasswordButton{
+  float: right;
+  color: #1890ff;
+  cursor: pointer;
+  display: inline-block;
+  text-align: right;
+  text-decoration: none;
+
+}
+.registerButton {
+  display: inline-block;
+  padding: 8px 16px; /* Adjust padding as needed */
+  background-color: #007bff; /* Adjust background color */
+  color: #ffffff; /* Adjust text color */
+  cursor: pointer;
+  border-radius: 4px; /* Adjust border radius */
+}
+
+/* Add additional styles as needed */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.defaultRadius {
+  border-radius: 0.8rem;
+}
+
+.methodSelections {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.methodContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1.25rem;
+}
+.resetPasswordLink {
+  color: #1890ff;
+  cursor: pointer;
+  margin-top: 8px;
+  display: inline-block;
+  text-align: right;
+  text-decoration: none;
+}
+
+.resetPasswordLink:hover {
+  text-decoration: underline;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

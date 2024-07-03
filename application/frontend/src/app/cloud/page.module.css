@@ -1,0 +1,60 @@
+/* Style for the main content area */
+.content {
+  display: flex; /* Use flexbox for layout */
+  padding-left: 250px; /* Adjusted to match sidebar width */
+  width: 100%;
+}
+
+/* Style for the sidebar */
+.sidebar {
+  width: 250px; /* Adjust width as needed */
+  background-color: #1e90ff; 
+  padding: 20px;
+  color: #fff; /* White text color */
+}
+.leftContainer{
+  width: 50%;
+  background-color: #1e90ff; 
+  padding: 20px;
+  color: #fff; /* White text color */
+
+}
+
+.rightContainer{
+  width: 50%;
+  background-color: #1e90ff;
+  padding: 20px;
+  margin-right: 50px;
+  color: #fff; /* White text color */
+}
+
+/* Style for the collapsible container */
+.collapsiblecontainer {
+  margin-top: 20px; /* Adjust margin as needed */
+  flex: 1; /* Occupy remaining space */
+}
+
+/* Style for each collapsible component */
+.Collapsible {
+  height: 80px;
+  width: 50%;
+  margin-bottom: 10px; /* Adjust margin as needed */
+  color: #1e90ff; 
+   border: 1px solid #1e90ff;
+  border-radius: 5px;
+  background-color: #fff; /* White background */
+}
+
+/* Style for collapsible trigger (title) */
+.Collapsible__trigger {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #1e90ff; 
+  color: #fff; 
+  border-bottom: 1px solid #1e90ff; /* Blue border bottom */
+}
+
+/* Style for collapsible content */
+.Collapsible__contentInner {
+  padding: 10px;
+}

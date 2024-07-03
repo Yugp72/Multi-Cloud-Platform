@@ -1,0 +1,30 @@
+.custombutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* 50% of screen size */
+    padding: 10px;
+    background-color: white; /* Blue color, you can change it as needed */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .buttontext {
+    flex-grow: 1; /* Allow the text to grow and take up remaining space */
+    margin-right: 10px; /* Space between text and symbols */
+  }
+  
+  .symbol {
+    font-size: 20px; /* Adjust the size as needed */
+  }
+  .custombutton:hover {
+    background-color: #9a9ea1;/* Change text color on hover */
+      }
+  .custombutton:hover .buttontext {
+    color: white; /* Change text color on hover */
+
+  }
+  

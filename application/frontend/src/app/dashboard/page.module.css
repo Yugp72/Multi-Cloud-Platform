@@ -1,0 +1,140 @@
+.mainContainer{
+    display: flex;
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.leftContainer{
+    display: flex;
+    padding: 0.625rem 1.25rem 1.875rem 1.25rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 0.625rem;
+    background: rgba(0, 81, 162, 0.15);
+}
+
+.heading{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    padding-bottom: 1rem;
+}
+
+.headingText{
+    color: #0051A2;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+}
+
+.headingContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 0.625rem;
+    background: #FFF;
+    
+    
+}
+
+.table{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.0625rem;
+    overflow: scroll;
+}
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.rightSubContainer1{
+    display: flex;
+    height: 16.75rem;
+    /* padding: 1.25rem; */
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 0.625rem;
+    background: rgba(0, 81, 162, 0.15);
+}
+
+.headingText2{
+    display: flex;
+    height: 3.375rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 1rem;
+}
+
+.headingText3{
+    display: flex;
+    height: 3.375rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.messTable{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    background-color: #FFF;
+}
+
+.rightSubContainer2{
+    display: flex;
+    height: 16.75rem;
+    padding: 1.25rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 0.625rem;
+    background: rgba(0, 81, 162, 0.15);
+}
+
+.form{
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.6rem;
+    padding-bottom: 4rem;
+}
+
+.inputText{
+    width: 20rem;
+}
+
