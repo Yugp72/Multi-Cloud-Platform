@@ -19,19 +19,15 @@ The **Efficient Multi-Cloud Platform** is designed to manage resources across Go
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   ```
-2. Install dependencies:
+1. Install dependencies:
     ```bash
     npm install
     ```
-3.  Start the backend server:
+2.  Start the backend server:
      ```sh
      go run main.go
      ```
-4. Start the frontend server:
+3. Start the frontend server:
      ```sh
      npm run dev
      ```
